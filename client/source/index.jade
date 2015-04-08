@@ -1,0 +1,22 @@
+doctype 5
+
+html
+	head
+		meta(charset='UTF-8')
+		title
+			| wpApp
+		link(href='/css/ui-themed.css', rel='stylesheet')
+		link(href='/css/default.css', rel='stylesheet')
+		script(src='//Microsoft.Phone.WinJS.2.1/js/base.js')
+		script(src='//Microsoft.Phone.WinJS.2.1/js/ui.js')
+
+		script(src='libs/angular.js')
+		script(src='libs/angular-animate.js')
+		script(src='libs/angular-ui-router.js')
+		script(src='libs/angular-winjs.js')
+
+		script(src='scripts.js')
+		script(src='templates.js')
+	body.phone
+		p tampham
+		div(id="contenthost", class="turnstile-animation", ui-view)
